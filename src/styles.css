@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* remove arrows from input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.countdown {
+  width: 100vw;
+  height: 100vh;
+  padding: 20vh 0;
+  color: grey;
+  background-color: #252323;
+  background: linear-gradient(
+    180deg,
+    rgba(29, 29, 32, 1) 0%,
+    rgba(15, 19, 25, 1) 21%,
+    rgba(37, 35, 35, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.countdown_heading {
+  margin-bottom: 30px;
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.countdown_colon {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.countdown_input {
+  background-color: transparent;
+  padding: 20px;
+  border: none;
+  border-bottom: 1px solid grey;
+  color: grey;
+  text-align: center;
+  font-size: 24px;
+  width: 100px;
+}
+
+.countdown_input:focus {
+  outline: none;
+}
+
+.countdown_btn {
+  margin: 60px 30px;
+  padding: 10px 30px;
+  width: 200px;
+  border-radius: 12px;
+  border: none;
+  letter-spacing: 0.8px;
+}
+
+.countdown_reset {
+  background-color: grey;
+}
+
+.countdown_start {
+  background-color: green;
+}
+
+.countdown_stop {
+  background-color: maroon;
+}
